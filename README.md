@@ -1,4 +1,6 @@
 # Hangman Console Game
+[![jpn](https://img.shields.io/badge/lang-jpn-red.svg)](https://github.com/renm10/Hangman/blob/main/README-jp.md)
+
 This is the famous hangman game made in C++ from scratch playable on the console.
 
 ## Objective
