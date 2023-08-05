@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <vector>
 
-
 using namespace std;
 
 void printTitle();
@@ -15,8 +14,8 @@ void clearScreen();
 int main()
 {
     string sentence = "channel"; //The hidden answer
-    string guess = "";
-    vector<char> userguesses;
+    string guess = ""; //Players currently guessed sentence
+    vector<char> userguesses; //Keeps track of all of the players guesses
     char temp;
     char userguess;
     int miss = 0;
@@ -37,7 +36,7 @@ int main()
 
     printTitle();
     
-    while (miss < 6)
+    while (miss < 6) //Player has 6 tries
     {
         clearScreen();
         printMan(miss);
@@ -48,7 +47,7 @@ int main()
         cin >> userguess;
         cout << endl;
 
-        while (guessedAlready(userguess, userguesses))
+        while (guessedAlready(userguess, userguesses)) //Check for correct guess
         {
             clearScreen();
             printMan(miss);
@@ -83,7 +82,7 @@ int main()
         }
 
 
-        if (!matchfound)
+        if (!matchfound) 
         {
             miss++;
         }
@@ -107,6 +106,7 @@ int main()
     cout << "Correct Answer: " << sentence << endl;
 }
 
+//Prints the Title
 void printTitle()
 {
     clearScreen();
@@ -118,6 +118,7 @@ void printTitle()
     clearScreen();
 }
 
+//Print the hangman figure
 void printMan(int miss)
 {
     switch (miss)
@@ -173,6 +174,7 @@ void printMan(int miss)
     }
 }
 
+//Check if the player won or not
 bool checkWin(string sentence, string guess)
 {
     for (int i = 0; i < sentence.length(); i++)
@@ -185,6 +187,7 @@ bool checkWin(string sentence, string guess)
     return true;
 }
 
+//Checks if the players guess was guessed before or not
 bool guessedAlready(char userguess, vector<char> userguesses)
 {
     for (int i = 0; i < userguesses.size(); i++)
@@ -197,6 +200,7 @@ bool guessedAlready(char userguess, vector<char> userguesses)
     return false;
 }
 
+//Print the users currently guessed sentence
 void printSentence(string sentence, string& guess, char alpha)
 {
     for (int i = 0; i < sentence.length(); i++)
@@ -212,7 +216,12 @@ void printSentence(string sentence, string& guess, char alpha)
     }
 }
 
+//Clear the console depending on the OS
 void clearScreen()
 {
-    system("clear");
+    #ifdef WINDOWS //Windows cls command 
+        system("cls");
+    #else 
+        system("clear");
+    #endif
 }
