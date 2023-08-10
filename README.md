@@ -31,3 +31,6 @@ The player's objective is to guess the hidden word.
     ```
     ./programName
     ```
+
+## Screenshots
+![HangmanTitle]("https://github.com/renm10/Hangman/assets/43124584/0c31e2cf-e275-4bdc-ac50-8520c2e8bfac)
