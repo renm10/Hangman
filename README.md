@@ -33,6 +33,6 @@ The player's objective is to guess the hidden word.
     ```
 
 ## Screenshots
-<img width="219" alt="HangmanTitle" src="https://github.com/renm10/Hangman/assets/43124584/74baa81a-e780-4021-9065-c4e009f915a8"><BR CLEAR-ALL/>
-<img width="315" alt="HangmanError" src="https://github.com/renm10/Hangman/assets/43124584/97b30e38-a25d-4247-9522-4ab441a2a406"><BR CLEAR-ALL/>
-<img width="240" alt="HangmanLoss" src="https://github.com/renm10/Hangman/assets/43124584/e4de1463-6d82-4655-8f5c-053cf2648bfd"><BR CLEAR-ALL/>
+<img width="219" alt="HangmanTitle" src="https://github.com/renm10/Hangman/assets/43124584/660bc57b-b98b-4ae7-99e8-a0fed773b143"><BR CLEAR-ALL/>
+<img width="240" alt="HangmanLoss" src="https://github.com/renm10/Hangman/assets/43124584/cded9892-8bc7-405d-9640-3e9f4c190425"><BR CLEAR-ALL/>
+<img width="315" alt="HangmanError" src="https://github.com/renm10/Hangman/assets/43124584/efb60cb0-8ec5-410d-a598-e02d0bd5dea0"><BR CLEAR-ALL/>
